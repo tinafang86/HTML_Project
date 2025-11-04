@@ -26,3 +26,7 @@ img {
 .underline_text {
     text-decoration: line-through;
 }
+
+body {
+    margin: 8px;
+}
