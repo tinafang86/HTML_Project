@@ -1,0 +1,32 @@
+h1 {
+    color: blue;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    color: red
+}
+
+a:hover {
+    color: blue
+}
+
+.subtitle {
+    font-size: 25px;
+    font-weight: bolder;
+    border-left: 10px solid red;
+    border-bottom: 10px solid red;
+}
+
+img {
+    border: 10px solid green
+}
+
+.underline_text {
+    text-decoration: line-through;
+}
+
+body {
+    margin: 8px;
+}

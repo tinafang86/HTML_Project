@@ -1,0 +1,158 @@
+body {
+    font-family: "Segoe UI", "Noto Sans TC", sans-serif;
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    margin: 0;
+    padding: 0;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.app-icon {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.app-icon img {
+    width: 60%;
+    height: 60%;
+}
+
+@keyframes bounceAnim {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+.bounce {
+    animation: bounceAnim 2.2s infinite ease-in-out;
+}
+
+.card {
+    background: #fff;
+    width: 420px;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.dog-illustration {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.dog-illustration img {
+    width: 140px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-top: 18px;
+    color: #444;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 6px;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #ff9a76;
+    box-shadow: 0 0 6px rgba(255, 154, 118, 0.4);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    background: #ff9a76;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #ff7f5a;
+}
+
+.result-box {
+    margin-top: 25px;
+    padding: 18px;
+    background: #fff7f2;
+    border-radius: 10px;
+    border-left: 5px solid #ff9a76;
+    font-weight: 600;
+    color: #444;
+    animation: fadeIn 0.4s ease;
+}
+
+.source {
+    font-size: 13px;
+    margin-top: 18px;
+    color: #666;
+}
+
+.source a {
+    color: #ff7f5a;
+    text-decoration: none;
+}

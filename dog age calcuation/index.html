@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>狗狗歲數換算器</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="app-icon bounce">
+            <img src="https://cdn-icons-png.flaticon.com/512/194/194279.png" alt="dog icon">
+        </div>
+
+        <div class="card">
+            <h1>🐶 狗狗歲數計算機</h1>
+
+            <div class="dog-illustration">
+                <img src="https://cdn-icons-png.flaticon.com/512/620/620851.png" alt="dog illustration">
+            </div>
+
+            <label>狗狗名稱：</label>
+            <input type="text" id="dogName" placeholder="請輸入狗狗名字">
+
+            <label>狗狗的出生日期：</label>
+            <input type="date" id="birthDate">
+
+            <button onclick="calculate()">開始計算</button>
+
+            <div id="result" class="result-box" style="display:none;"></div>
+
+            <div class="source">
+                參考文獻（UC San Diego / Cell Systems）：
+                <a href="https://www.cell.com/cell-systems/fulltext/S2405-4712(19)30226-5" target="_blank">
+                    Epigenetic Aging Clock Across Species
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
