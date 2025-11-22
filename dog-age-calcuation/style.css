@@ -1,3 +1,11 @@
+/* --- 新增：全域 Box Model 設定 --- */
+/* 這一行救命用的，讓 padding 不會撐大原本設定好的 width */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Segoe UI", "Noto Sans TC", sans-serif;
     background: linear-gradient(135deg, #ffecd2, #fcb69f);
@@ -47,7 +55,13 @@ body {
 
 .card {
     background: #fff;
-    width: 420px;
+    /* --- 修改開始 --- */
+    width: 90%;
+    /* 手機版：佔螢幕寬度的 90%，左右留點縫隙 */
+    max-width: 420px;
+    /* 電腦版：最大就只到 420px，不會無限變大 */
+    /* --- 修改結束 --- */
+
     padding: 30px;
     border-radius: 18px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -155,4 +169,36 @@ button:hover {
 .source a {
     color: #ff7f5a;
     text-decoration: none;
+}
+
+/* --- 新增：針對手機尺寸的微調 --- */
+@media (max-width: 480px) {
+
+    /* 1. 減少上方留白，手機版不需要那麼空 */
+    .app-container {
+        padding-top: 20px;
+    }
+
+    /* 2. 卡片內距縮小，讓內容有更多空間 */
+    .card {
+        padding: 20px;
+    }
+
+    /* 3. 標題稍微縮小，避免換行 */
+    h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    /* 4. 插圖稍微縮小 */
+    .dog-illustration img {
+        width: 120px;
+    }
+
+    /* 5. ICON 稍微縮小 */
+    .app-icon {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 15px;
+    }
 }
